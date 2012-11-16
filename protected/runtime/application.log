@@ -1,0 +1,388 @@
+2012/11/16 01:55:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii.".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('gii.')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/index.php?r=gii.
+---
+2012/11/16 02:06:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gii".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('gii')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('gii')
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('site/gii')
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crownmembers/index.php?r=site/gii
+---
+2012/11/16 02:14:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('admin')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('admin')
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('site/admin')
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crownmembers/index.php?r=site/admin
+---
+2012/11/16 02:14:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('admin')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('admin')
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('site/admin')
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crownmembers/index.php?r=site/admin
+---
+2012/11/16 02:14:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "phpmyadmin".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('phpmyadmin')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('phpmyadmin')
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('site/phpmyadmin')
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/crownmembers/index.php?r=site/phpmyadmin
+---
+2012/11/16 02:35:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in C:\wamp\www\yii-1.1.12.b600af\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(624): CApplication->getDb()
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(2311): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(User))
+#7 C:\wamp\www\crownmembers\protected\models\User.php(21): CActiveRecord::model('User')
+#8 C:\wamp\www\crownmembers\protected\controllers\UserController.php(153): User::model()
+#9 C:\wamp\www\crownmembers\protected\controllers\UserController.php(55): UserController->loadModel('22')
+#10 [internal function]: UserController->actionView('22')
+#11 C:\wamp\www\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#12 C:\wamp\www\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#13 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#16 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#17 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#18 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('view')
+#22 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('user/view')
+#23 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/crownmembers/index.php?r=user/view&id=22
+HTTP_REFERER=http://localhost/crownmembers/index.php?r=user/admin
+---
+2012/11/16 02:37:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'crown members.tbl_user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_user`.
+in C:\wamp\www\crownmembers\protected\models\User.php (21)
+in C:\wamp\www\crownmembers\protected\controllers\UserController.php (153)
+in C:\wamp\www\crownmembers\protected\controllers\UserController.php (55)
+2012/11/16 02:37:23 [error] [exception.CDbException] exception 'CDbException' with message 'The table "tbl_user" for active record class "User" cannot be found in the database.' in C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(User))
+#1 C:\wamp\www\crownmembers\protected\models\User.php(21): CActiveRecord::model('User')
+#2 C:\wamp\www\crownmembers\protected\controllers\UserController.php(153): User::model()
+#3 C:\wamp\www\crownmembers\protected\controllers\UserController.php(55): UserController->loadModel('22')
+#4 [internal function]: UserController->actionView('22')
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#14 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('view')
+#16 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('user/view')
+#17 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/crownmembers/index.php?r=user/view&id=22
+HTTP_REFERER=http://localhost/crownmembers/index.php?r=user/admin
+---
+2012/11/16 02:37:24 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'crown members.tbl_user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_user`.
+in C:\wamp\www\crownmembers\protected\models\User.php (21)
+in C:\wamp\www\crownmembers\protected\controllers\UserController.php (153)
+in C:\wamp\www\crownmembers\protected\controllers\UserController.php (55)
+2012/11/16 02:37:24 [error] [exception.CDbException] exception 'CDbException' with message 'The table "tbl_user" for active record class "User" cannot be found in the database.' in C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(User))
+#1 C:\wamp\www\crownmembers\protected\models\User.php(21): CActiveRecord::model('User')
+#2 C:\wamp\www\crownmembers\protected\controllers\UserController.php(153): User::model()
+#3 C:\wamp\www\crownmembers\protected\controllers\UserController.php(55): UserController->loadModel('22')
+#4 [internal function]: UserController->actionView('22')
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#14 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('view')
+#16 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('user/view')
+#17 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/crownmembers/index.php?r=user/view&id=22
+HTTP_REFERER=http://localhost/crownmembers/index.php?r=user/admin
+---
+2012/11/16 02:37:26 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'crown members.tbl_user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_user`.
+in C:\wamp\www\crownmembers\protected\models\User.php (21)
+in C:\wamp\www\crownmembers\protected\controllers\UserController.php (153)
+in C:\wamp\www\crownmembers\protected\controllers\UserController.php (55)
+2012/11/16 02:37:26 [error] [exception.CDbException] exception 'CDbException' with message 'The table "tbl_user" for active record class "User" cannot be found in the database.' in C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(User))
+#1 C:\wamp\www\crownmembers\protected\models\User.php(21): CActiveRecord::model('User')
+#2 C:\wamp\www\crownmembers\protected\controllers\UserController.php(153): User::model()
+#3 C:\wamp\www\crownmembers\protected\controllers\UserController.php(55): UserController->loadModel('22')
+#4 [internal function]: UserController->actionView('22')
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#14 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('view')
+#16 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('user/view')
+#17 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/crownmembers/index.php?r=user/view&id=22
+HTTP_REFERER=http://localhost/crownmembers/index.php?r=user/admin
+---
+2012/11/16 02:37:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'crown members.tbl_user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_user`.
+in C:\wamp\www\crownmembers\protected\models\User.php (21)
+in C:\wamp\www\crownmembers\protected\controllers\UserController.php (153)
+in C:\wamp\www\crownmembers\protected\controllers\UserController.php (55)
+2012/11/16 02:37:27 [error] [exception.CDbException] exception 'CDbException' with message 'The table "tbl_user" for active record class "User" cannot be found in the database.' in C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(User))
+#1 C:\wamp\www\crownmembers\protected\models\User.php(21): CActiveRecord::model('User')
+#2 C:\wamp\www\crownmembers\protected\controllers\UserController.php(153): User::model()
+#3 C:\wamp\www\crownmembers\protected\controllers\UserController.php(55): UserController->loadModel('22')
+#4 [internal function]: UserController->actionView('22')
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#14 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('view')
+#16 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('user/view')
+#17 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/crownmembers/index.php?r=user/view&id=22
+HTTP_REFERER=http://localhost/crownmembers/index.php?r=user/admin
+---
+2012/11/16 02:37:28 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'crown members.tbl_user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_user`.
+in C:\wamp\www\crownmembers\protected\models\User.php (21)
+in C:\wamp\www\crownmembers\protected\controllers\UserController.php (153)
+in C:\wamp\www\crownmembers\protected\controllers\UserController.php (55)
+2012/11/16 02:37:28 [error] [exception.CDbException] exception 'CDbException' with message 'The table "tbl_user" for active record class "User" cannot be found in the database.' in C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(User))
+#1 C:\wamp\www\crownmembers\protected\models\User.php(21): CActiveRecord::model('User')
+#2 C:\wamp\www\crownmembers\protected\controllers\UserController.php(153): User::model()
+#3 C:\wamp\www\crownmembers\protected\controllers\UserController.php(55): UserController->loadModel('22')
+#4 [internal function]: UserController->actionView('22')
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#14 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('view')
+#16 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('user/view')
+#17 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/crownmembers/index.php?r=user/view&id=22
+HTTP_REFERER=http://localhost/crownmembers/index.php?r=user/admin
+---
+2012/11/16 02:37:28 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'crown members.tbl_user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_user`.
+in C:\wamp\www\crownmembers\protected\models\User.php (21)
+in C:\wamp\www\crownmembers\protected\controllers\UserController.php (153)
+in C:\wamp\www\crownmembers\protected\controllers\UserController.php (55)
+2012/11/16 02:37:28 [error] [exception.CDbException] exception 'CDbException' with message 'The table "tbl_user" for active record class "User" cannot be found in the database.' in C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(User))
+#1 C:\wamp\www\crownmembers\protected\models\User.php(21): CActiveRecord::model('User')
+#2 C:\wamp\www\crownmembers\protected\controllers\UserController.php(153): User::model()
+#3 C:\wamp\www\crownmembers\protected\controllers\UserController.php(55): UserController->loadModel('22')
+#4 [internal function]: UserController->actionView('22')
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#14 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('view')
+#16 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('user/view')
+#17 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/crownmembers/index.php?r=user/view&id=22
+HTTP_REFERER=http://localhost/crownmembers/index.php?r=user/admin
+---
+2012/11/16 02:37:28 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'crown members.tbl_user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_user`.
+in C:\wamp\www\crownmembers\protected\controllers\UserController.php (136)
+in C:\wamp\www\crownmembers\index.php (13)
+2012/11/16 02:37:28 [error] [exception.CDbException] exception 'CDbException' with message 'The table "tbl_user" for active record class "User" cannot be found in the database.' in C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(User))
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(403): CActiveRecord::model('User')
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 C:\wamp\www\crownmembers\protected\controllers\UserController.php(136): CActiveRecord->__construct('search')
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): UserController->actionAdmin()
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('admin')
+#14 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('user/admin')
+#15 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/crownmembers/index.php?r=user/admin
+HTTP_REFERER=http://localhost/crownmembers/index.php?r=user/index
+---
+2012/11/16 02:37:29 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'crown members.tbl_user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_user`.
+in C:\wamp\www\crownmembers\protected\controllers\UserController.php (125)
+in C:\wamp\www\crownmembers\index.php (13)
+2012/11/16 02:37:29 [error] [exception.CDbException] exception 'CDbException' with message 'The table "tbl_user" for active record class "User" cannot be found in the database.' in C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(User))
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('User')
+#2 C:\wamp\www\crownmembers\protected\controllers\UserController.php(125): CActiveDataProvider->__construct('User')
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): UserController->actionIndex()
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('index')
+#13 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('user/index')
+#14 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/crownmembers/index.php?r=user/index
+HTTP_REFERER=http://localhost/crownmembers/index.php?r=user/admin
+---
+2012/11/16 02:37:30 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'crown members.tbl_user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_user`.
+in C:\wamp\www\crownmembers\protected\controllers\UserController.php (136)
+in C:\wamp\www\crownmembers\index.php (13)
+2012/11/16 02:37:30 [error] [exception.CDbException] exception 'CDbException' with message 'The table "tbl_user" for active record class "User" cannot be found in the database.' in C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(User))
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(403): CActiveRecord::model('User')
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 C:\wamp\www\crownmembers\protected\controllers\UserController.php(136): CActiveRecord->__construct('search')
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): UserController->actionAdmin()
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('admin')
+#14 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('user/admin')
+#15 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/crownmembers/index.php?r=user/admin
+---
+2012/11/16 02:37:55 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'crown members.tbl_user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_user`.
+in C:\wamp\www\crownmembers\protected\controllers\UserController.php (125)
+in C:\wamp\www\crownmembers\index.php (13)
+2012/11/16 02:37:55 [error] [exception.CDbException] exception 'CDbException' with message 'The table "tbl_user" for active record class "User" cannot be found in the database.' in C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(User))
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('User')
+#2 C:\wamp\www\crownmembers\protected\controllers\UserController.php(125): CActiveDataProvider->__construct('User')
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): UserController->actionIndex()
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('index')
+#13 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('user/index')
+#14 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/crownmembers/index.php?r=user/index
+HTTP_REFERER=http://localhost/crownmembers/index.php?r=user/view&id=25
+---
+2012/11/16 02:39:23 [error] [exception.CException] exception 'CException' with message 'Property "User.username" is not defined.' in C:\wamp\www\yii-1.1.12.b600af\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(144): CComponent->__get('username')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('username')
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(User), 'username')
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(User), 'username', Array)
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\widgets\CActiveForm.php(658): CHtml::activeTextField(Object(User), 'username', Array)
+#5 C:\wamp\www\crownmembers\protected\views\user\_form.php(20): CActiveForm->textField(Object(User), 'username', Array)
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CBaseController.php(127): require('C:\wamp\www\cro...')
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\cro...', Array, true)
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\cro...', Array, true)
+#9 C:\wamp\www\crownmembers\protected\views\user\create.php(18): CController->renderPartial('_form', Array)
+#10 C:\wamp\www\yii-1.1.12.b600af\framework\web\CBaseController.php(127): require('C:\wamp\www\cro...')
+#11 C:\wamp\www\yii-1.1.12.b600af\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\cro...', Array, true)
+#12 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\cro...', Array, true)
+#13 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#14 C:\wamp\www\crownmembers\protected\controllers\UserController.php(79): CController->render('create', Array)
+#15 C:\wamp\www\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): UserController->actionCreate()
+#16 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#23 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('create')
+#25 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('user/create')
+#26 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/crownmembers/index.php?r=user/create
+HTTP_REFERER=http://localhost/crownmembers/index.php?r=user/index
+---
