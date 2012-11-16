@@ -16,6 +16,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'ext.restfullyii.components.*'
 	),
 
 	'modules'=>array(
@@ -34,16 +35,55 @@ return array(
 			'allowAutoLogin'=>true,
 		),
 		// uncomment the following to enable URLs in path-format
-		/*
+		
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
-				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
-				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+				// '<controller:\w+>/<id:\d+>'=>'<controller>/view',
+				// '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+				// '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+				'api/<controller:\w+>' => array(
+			      '<controller>/restList',
+			      'verb' => 'GET',
+			    ),
+			    'api/<controller:\w+>/<id:\w+>' => array(
+			      '<controller>/restView',
+			      'verb' => 'GET',
+			    ),
+			    'api/<controller:\w+>/<id:\w+>/<var:\w+>' => array(
+			      '<controller>/restView',
+			      'verb' => 'GET',
+			    ),
+			    array(
+			      '<controller>/restUpdate',
+			      'pattern' => 'api/<controller:\w+>/<id:\d+>',
+			      'verb' => 'PUT',
+			    ),
+			    array(
+			      '<controller>/restDelete',
+			      'pattern' => 'api/<controller:\w+>/<id:\d+>',
+			      'verb' => 'DELETE',
+			    ),
+			    array(
+			      '<controller>/restCreate',
+			      'pattern' => 'api/<controller:\w+>',
+			      'verb' => 'POST',
+			    ),
+			    array(
+			      '<controller>/restCreate',
+			      'pattern' => 'api/<controller:\w+>/<id:\w+>',
+			      'verb'=>'POST',
+			    ),
+			    '<controller:\w+>/<id:\d+>' => '<controller>/view',
+			    '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
+			    '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
 			),
 		),
-		*/
+		/*
+		'db'=>array(
+			'connectionString' => 'sqlite:protected/data/testdrive.db',
+		),*/
+		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=crown members',

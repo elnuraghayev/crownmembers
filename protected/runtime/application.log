@@ -386,3 +386,679 @@ Stack trace:
 REQUEST_URI=/crownmembers/index.php?r=user/create
 HTTP_REFERER=http://localhost/crownmembers/index.php?r=user/index
 ---
+2012/11/16 22:32:49 [error] [exception.CException] exception 'CException' with message 'Property "User.username" is not defined.' in C:\wamp\www\yii-1.1.12.b600af\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(144): CComponent->__get('username')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('username')
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(User), 'username')
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(User), 'username', Array)
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\widgets\CActiveForm.php(658): CHtml::activeTextField(Object(User), 'username', Array)
+#5 C:\wamp\www\crownmembers\protected\views\user\_form.php(20): CActiveForm->textField(Object(User), 'username', Array)
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CBaseController.php(127): require('C:\wamp\www\cro...')
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\cro...', Array, true)
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\cro...', Array, true)
+#9 C:\wamp\www\crownmembers\protected\views\user\create.php(18): CController->renderPartial('_form', Array)
+#10 C:\wamp\www\yii-1.1.12.b600af\framework\web\CBaseController.php(127): require('C:\wamp\www\cro...')
+#11 C:\wamp\www\yii-1.1.12.b600af\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\cro...', Array, true)
+#12 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\cro...', Array, true)
+#13 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#14 C:\wamp\www\crownmembers\protected\controllers\UserController.php(79): CController->render('create', Array)
+#15 C:\wamp\www\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): UserController->actionCreate()
+#16 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#23 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('create')
+#25 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('user/create')
+#26 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/crownmembers/index.php?r=user/create
+HTTP_REFERER=http://localhost/crownmembers/index.php?r=user/index
+---
+2012/11/16 22:33:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('admin')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/index.php?r=admin
+---
+2012/11/16 23:20:00 [error] [php] include(ERestController.php): failed to open stream: No such file or directory (C:\wamp\www\yii-1.1.12.b600af\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\wamp\www\crownmembers\protected\controllers\MembersController.php(4): spl_autoload_call()
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(355): require()
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(277): CWebApplication->createController()
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\crownmembers\index.php(13): CWebApplication->run()
+REQUEST_URI=/crownmembers/members
+in C:\wamp\www\crownmembers\protected\controllers\MembersController.php (4)
+in C:\wamp\www\crownmembers\index.php (13)
+2012/11/16 23:20:53 [error] [exception.CDbException] exception 'CDbException' with message 'The table "members" for active record class "Members" cannot be found in the database.' in C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Members))
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Members')
+#2 C:\wamp\www\crownmembers\protected\controllers\MembersController.php(125): CActiveDataProvider->__construct('Members')
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): MembersController->actionIndex()
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('')
+#13 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members')
+#14 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/crownmembers/members
+---
+2012/11/16 23:20:54 [error] [exception.CDbException] exception 'CDbException' with message 'The table "members" for active record class "Members" cannot be found in the database.' in C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Members))
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Members')
+#2 C:\wamp\www\crownmembers\protected\controllers\MembersController.php(125): CActiveDataProvider->__construct('Members')
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): MembersController->actionIndex()
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('')
+#13 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members')
+#14 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/crownmembers/members
+---
+2012/11/16 23:20:54 [error] [exception.CDbException] exception 'CDbException' with message 'The table "members" for active record class "Members" cannot be found in the database.' in C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php:2312
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Members))
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Members')
+#2 C:\wamp\www\crownmembers\protected\controllers\MembersController.php(125): CActiveDataProvider->__construct('Members')
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): MembersController->actionIndex()
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('')
+#13 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members')
+#14 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/crownmembers/members
+---
+2012/11/16 23:21:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/members".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('api/members')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:23:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/members".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('api/members')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:23:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/members".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('api/members')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:23:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/members".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('api/members')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:23:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/members".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('api/members')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:23:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/members".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('api/members')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:23:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/members".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('api/members')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:23:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/members".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('api/members')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:23:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/members".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('api/members')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:24:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/members".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('api/members')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:24:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/members".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('api/members')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:24:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/members".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('api/members')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:24:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/members".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('api/members')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:24:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/members".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('api/members')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:24:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/members".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('api/members')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:24:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/member".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('api/member')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/api/member
+---
+2012/11/16 23:24:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/members".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('api/members')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:24:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/members".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('api/members')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:24:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:24:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:24:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:24:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:26:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:26:26 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:26:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:28:11 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:28:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:28:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:28:17 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restView')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restVie...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members/1
+---
+2012/11/16 23:28:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:30:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:30:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:30:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:30:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:30:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:30:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:30:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:30:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:30:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:30:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:30:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:30:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:30:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
+2012/11/16 23:30:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('restList')
+#8 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('members/restLis...')
+#9 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/crownmembers/api/members
+---
