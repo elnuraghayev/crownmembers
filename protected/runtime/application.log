@@ -1062,3 +1062,59 @@ Stack trace:
 #11 {main}
 REQUEST_URI=/crownmembers/api/members
 ---
+2012/11/17 00:49:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cookbook.html".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('cookbook.html')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/cookbook.html
+---
+2012/11/17 00:49:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/cookbook.html".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('js/cookbook.htm...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/js/cookbook.html
+---
+2012/11/17 00:49:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/cookbook/cookbook.html".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('js/cookbook/coo...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/js/cookbook/cookbook.html
+---
+2012/11/17 00:50:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cookbook/cookbook.html".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('cookbook/cookbo...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/cookbook/cookbook.html
+---
+2012/11/17 02:44:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cookbook/cookbook.html".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('cookbook/cookbo...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/cookbook/cookbook.html
+---
+2012/11/17 02:45:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wamp/www/cookbook/recipe/create/create.html".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('wamp/www/cookbo...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/wamp/www/cookbook/recipe/create/create.html
+---
+2012/11/17 02:45:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wamp/www/js/javascriptmvc/cookbook/recipe/create/create.html".' in C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('wamp/www/js/jav...')
+#1 C:\wamp\www\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\crownmembers\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/crownmembers/wamp/www/js/javascriptmvc/cookbook/recipe/create/create.html
+---
